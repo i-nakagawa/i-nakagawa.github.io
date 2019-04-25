@@ -14,15 +14,8 @@
 	<script src="js/vegas.min.js"></script>
 	<script>
 		$(function(){
-			// opening overlay
-			setTimeout(function(){
-				$("#top").css("opacity", 1);
-			},4000);
-			setTimeout(function(){
-				$("#opening").hide();
-			},8000);
 			//vegas
-			$("#top").vegas({
+			$("#top2").vegas({
 				slides: [
 					{ src : "img/bg_top1.jpg"},
 					{ src : "img/bg_top2.jpg"},
@@ -38,7 +31,7 @@
 			// logo animation
 			setTimeout(function(){
 				$(".logo").css("opacity", 1);
-			},150);
+			},150);			
 			// gotoabout
 			$("#gotoabout").click(function(){
 				var dis = $($(this).children("a").attr("href")).offset().top;
@@ -60,7 +53,7 @@
 					$("#gototop").removeAttr("style");
 				};
 			});
-			// global-header
+			// gloval-header
 			$(window).scroll(function(){
 				if ($(this).scrollTop() >= 500){
 						$(".global-header").css("top", "0px");
@@ -86,27 +79,14 @@
 </head>
 <body id="index">
 
-	<div id="opening"> 
-		<div class="opening_svg">
-		  <svg class="opening_svg2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-			 y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-			<polygon class="path" fill="none" stroke="#333" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="500" stroke-dashoffset="500" points="113,172.75 132.085,154.441 165.75,189.016 132.085,140.08 
-			114,157.633 109.75,150 77.298,189.016 109,164.548 "/>/>
-			</svg>
-		</div>
-		<div class="opening_logo">
-			<img src="img/logo2.png">
-		</div>
-	</div>
-
-	<section id="top">
+	<section id="top2">
 		<header class="top-header">
 			<div class="logo">  
 			  <a href="index.html"><img src="img/logo.png" alt="Van Tour"></a>
 		  </div>
 		  <nav>
 		  	<ul class="clearfix">
-		  		<li><a href="index.html#about">ABOUT</a></li>
+		  		<li><a href="index2.html#about">ABOUT</a></li>
 		  		<li><a href="places-to-go/index.html">PLACES TO GO</a></li>
 		  		<li><a href="events/index.html">EVENTS</a></li>
 		  		<li><a href="contact/index.html">CONTACT</a></li>
@@ -128,7 +108,7 @@
 		</div>
 	  <nav>
 	  	<ul>
-	  		<li><a href="index2.html#about">ABOUT</a></li>
+	  		<li><a href="index.html#about">ABOUT</a></li>
 	  		<li><a href="places-to-go/index.html">PLACES TO GO</a></li>
 	  		<li><a href="events/index.html">EVENTS</a></li>
 	  		<li><a href="contact/index.html">CONTACT</a></li>
@@ -193,7 +173,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<footer>&copy; 2019 Vancouver Tour</footer>
 
 	<div id="gototop">
@@ -214,7 +194,6 @@
 	</div>
 
 	<script>
-		//hamburger
 		$(".menu-trigger").click(function(){		
 			$(this).toggleClass("active2");
 		});
