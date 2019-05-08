@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>FRAME</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="js/vegas.min.css">
+	<link rel="stylesheet" href="js/jquery.fancybox.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/vegas.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+
+	<!-- <style>
+		.vegas-timer-progress{
+			background-color: blue;
+			opacity: 0.3;
+		}
+	</style> -->
+</head>
+<body>
+	<div id="wrap">
+		<header class="clearfix">
+			<h1><img src="images/logo.gif" alt="FRAME"></h1>
+			<div id="search">
+				<form method="post" action="">
+					<input placeholder="search" type="search" name="search" class="search">
+				</form>
+		  </div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#"><img src="images/nav01.gif" alt="nav"></a></li>  
+				<li><a href="#"><img src="images/nav02.gif" alt="nav"></a></li>
+				<li><a href="#"><img src="images/nav03.gif" alt="nav"></a></li>
+				<li><a href="#"><img src="images/nav04.gif" alt="nav"></a></li>
+				<li><a href="#"><img src="images/nav05.gif" alt="nav"></a></li>
+				<li><a href="#"><img src="images/nav06.gif" alt="nav"></a></li>
+			</ul>
+		</nav>
+		<main>
+			<div id="main_visual"></div>
+			<section id="recom" class="clearfix">
+				<h2><img src="images/recom_title.gif" alt="Recommended Items"></h2>
+				<p>FRAMEは、北欧で活躍するクリエイターの家具や雑貨を販売しています。<br>
+				今月のおすすめ商品をご紹介します。</p>
+        <!-- アイテム１ -->
+				<div class="item">
+					<div class="photo"><a href="https://s3-ap-northeast-1.amazonaws.com/kurashicom-images/colorme/PA01034/348/product/20349829.jpg" rel="item" title="ケトルポット"><img src="images/item01.jpg" alt="kettle"></a></div>
+					<div class="text">ホーロー製ケトル・ポット<br>&yen;4,725(税込)</div>
+        </div>
+        <!-- アイテム２ -->
+        <div class="item">
+					<div class="photo"><a href="https://images-na.ssl-images-amazon.com/images/I/518EuN84hPL._SX425_.jpg" rel="item" title="マグカップ"><img src="images/item02.jpg" alt="mug"></a></div>
+					<div class="text">マグカップ<br>&yen;2,100(税込)</div>
+        </div>
+        <!-- アイテム３ -->
+				<div class="item">
+					<div class="photo"><a href="https://image.interior-book.jp/article/original/90414.jpg" rel="item" title="フォトアルバム"><img src="images/item03.jpg" alt="album"></a></div>
+					<div class="text">フォトアルバム<br>&yen;1,365(税込)</div>
+        </div>
+        <!-- アイテム４ -->
+        <div class="item">
+					<div class="photo"><a href="https://gigaplus.makeshop.jp/hacoa/images/item/plus-lumber/trianglepen-set-mainphoto.jpg" rel="item" title="ボールペン"><img src="images/item04.jpg" alt="pen"></a></div>
+					<div class="text">ボールペン<br>&yen;158(税込)</div>
+        </div>
+			</section>
+			<section id="new">
+				<h2><img src="images/new_title.gif" alt="What's New"></h2>
+				<p>2016.04.24<br><a href="#">CAFEスペースがオープンいたします。</a></p>
+				<p>2016.04.24<br><a href="#">スタッフ・インテリアデザイナー／アシスタントデザイナーを募集中です。</a></p>
+				<p>2016.04.24<br><a href="#">FRAMEがオープンいたします。</a></p>			
+			</section>
+		</main>
+		<footer>Copyright &copy; 2016 FRAME Inc. All Rights Reserved.</footer>
+	</div>
+	<div id="hamburger">  
+		<img src="images/hamburger.png" alt="hamburger">
+	</div>
+
+	<script>
+		//hamburger
+		$("#hamburger").click(function(){
+			$("nav").css("left", "0px");
+		});
+		$("#wrap").click(function(){
+			$("nav").removeAttr("style");
+		});
+		//Vagasコール
+		$("#main_visual").vegas({
+			slides : [
+				{ src : "images/main_visual.jpg"},
+				{ src : "images/main_visual2.jpg"},
+				{ src : "images/main_visual3.jpg"},
+				{ src : "images/main_visual4.jpg"}
+			],
+			timer : false,
+			transitionDuration: 3000,
+		});
+		//fancyBoxコール
+		$(".item a").fancybox();
+	</script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Sample02</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$("#box1").click(function(){
+				// $(this).css("width","500px");
+				// $(this).css("background-color","red");
+				// $(this).css("margin","200px 0 0 200px");
+				// $(this).css("transform","rotate(45deg)");
+				//これは省略形で書ける↓
+				$(this).css({
+					"width":"500px",
+					"background-color":"red",
+					"margin":"200px 0 0 200px",
+					"transform":"rotate(45deg)"
+				});
+			});
+			$("button").click(function() {
+				// alert("ok");
+				//これでイベントが発火してるかどうかチェックできる。
+				//これでポップアップしなかったらイベントが動いてないってこと
+				$("#box1").removeAttr("style");
+				//Attribute(属性)。これで下のオリジナルのdurationは残ってるからゆっくり元に戻る感じ。
+			});
+		});
+	</script>
+	<style>
+	#box1{
+		width: 300px;
+		height: 300px;
+		background-color: blue;
+		transition-duration: 1s;
+	}
+	</style>
+</head>
+<body>
+	<button>Reset</button>
+	<div id="box1"></div>
+</body>
+</html>

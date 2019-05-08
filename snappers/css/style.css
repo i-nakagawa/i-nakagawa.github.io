@@ -1,0 +1,418 @@
+
+body{ 
+	font-family: Yu Gothic Medium, YuGothic, Trebuchet MS, Geneva, Tahoma, sans-serif;
+  background-color: #CCC;
+  color: #333;
+  line-height: 2;
+}
+
+/*Reset CSS*/
+p, h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+}
+img{
+	vertical-align: bottom;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*Link*/
+a{
+	color: #3583aa;
+	text-decoration: none;
+}
+a:visited{
+	color: #788d98;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*TAG*/
+header{
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+}
+
+.logo{
+	float: left;
+	margin-top: 50px;
+}
+
+nav{
+	float: right;
+	margin-top: 60px;
+}
+nav li{
+	float: left;
+	margin: 0 20px;
+	font-size: 1.33em;
+	font-family: 'Roboto Slab', serif;
+}
+
+.global-nav li a{
+	color: #FFF;
+}
+.global-nav li a:hover{
+	border-bottom: 2px solid #FFF;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+
+#wrap{
+	clear: both;
+	background-color: #FFF;  
+	margin-top: 220px;
+	padding: 35px 0;
+}
+.content{
+	width: 960px;
+	margin: 0 auto;
+}
+
+footer{
+	text-align: center;
+	color: #FFF;
+	padding: 20px 0;
+	font-size: 0.8em;
+  background-color: #767671;
+}
+
+#index h1{  
+	font-family: 'Bitter', /*Trebuchet MS, */sans-serif;
+	font-size: 100px;
+	line-height: 1;  /*行間が広すぎる為、狭めてる*/
+	color: #FFF;
+	margin-bottom: 50px;
+	border: none;
+}
+#index .content{
+	margin-top: 150px;
+}
+#index p{
+	font-size: 1.07em;  /*(16px)*/
+	color: #FFF;
+}
+.btn a{
+	background-color: #009CD3;
+	color: #FFF;
+	font-size: 1.33em;  /*(20px)*/
+	font-family: 'Bitter', serif;
+	width: 185px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 3px solid #009CD3;
+}
+.btn a:hover{
+	text-decoration: none;
+	background-color: #FFF;
+	color: #009CD3;
+}
+
+#index footer{
+	width: 960px;
+	margin: 150px auto 0;
+	text-align: left;
+	background-color: transparent;
+}
+
+#index{
+	background-image: url(../images/bg-index.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#index #wrap{
+	background-color: transparent;
+	margin-top: 0;
+	padding: 0;
+}
+
+/*Portfolio*/
+#portfolio{
+	background-image: url(../images/bg-portfolio.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+.main{
+	width: 700px;
+	margin: 0 10px;
+	float: left;
+}
+.sidebar{
+	width: 200px;
+	margin: 0 10px 0 30px;
+	float: right;
+	font-family: 'Bitter', serif;
+}
+.sidebar h2{
+	margin-bottom: 10px;
+}
+.sidebar ul{
+	list-style: disc;
+	margin-left: 20px;
+	font-size: 1.07em;
+}
+
+.sidebar ul a{
+	color: #333;
+}
+
+section a img{
+	transition-duration: 0.7s;
+	width: 700px;
+}
+section a img:hover{
+	width: 500px;
+	margin-right: 30px;
+  opacity: 0.5;
+}
+
+/*Photograph*/
+#photograph{
+	background-image: url(../images/bg-photograph.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+#photograph .photograph-list li{
+	float: left;
+	margin: 0 20px 15px 0;
+}
+#photograph .photograph-list li:nth-child(3n){  /*3の倍数の所に適応される*/
+	margin-right: 0;
+}
+/*Video*/
+#video{
+	background-image: url(../images/bg-video.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+/*About*/
+#about{
+	background-image: url(../images/bg-about.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+.main-center{
+	width: 940px;
+	margin: 0 auto;
+}
+h1{
+	font-family: 'Bitter', serif;
+	font-size: 2.4em;  /*(36px)*/
+	border-bottom: 1px solid #CCC;
+}
+h2{
+	font-family: 'Bitter', serif;
+	font-size: 1.6em;  /*(24px)*/
+}
+
+
+.icon::before{
+	content: "";
+  padding-right: 10px;
+  border-left: 7px solid #9CB4A4;
+}
+
+#about .profile-txt{
+	width: 540px;
+	float: left;
+}
+#about .profile-txt span{
+	font-weight: bold;
+}
+#about .profile-image{
+	float: right;
+}
+.clearfix::after{
+	content: "";
+  display: block;
+  clear: both;
+}
+section{
+	margin-bottom: 35px; 
+}
+
+#about .career th{
+	width: 240px;
+	background-color: #F0F0F0;
+	padding: 12px 0;
+	border: 1px solid #CCC;
+}
+#about .career td{
+	width: 660px;
+	padding: 12px 0 12px 40px;
+	border: 1px solid #CCC;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+/*Contact*/
+#contact{
+	background-image: url(../images/bg-contact.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+#contact .access table{
+	float: left;
+}
+#contact .access th, td{
+	text-align: left;
+	vertical-align: top;
+	line-height: 2.5;
+}
+#contact .access td{
+	padding-left: 30px;
+}
+#contact .access iframe{
+	width: 460px;
+	float: right;
+}
+
+#contact .form{
+	background-color: #EAEAEA;
+	padding: 30px 50px;
+}
+#contact .form dl dt{
+	width: 165px;
+	padding: 10px 0;
+	float: left;
+	clear: both;
+}
+#contact .form dl dd{
+	padding: 10px 0;
+
+}
+#contact .form .name{
+	width: 240px;
+	height: 30px;
+}
+#contact .form .emal{
+	width: 300px;
+	height: 30px;
+}
+#contact .form .tel{
+	width: 240px;
+	height: 30px;
+}
+#contact .form .type{
+	width: 180px;
+	height: 30px;
+}
+#contact .form .message{
+	width: 660px;
+	height: 150px;
+}
+
+#contact .form .btn{
+	background-color: #009CD3;
+	color: #FFF;
+	font-size: 1.33em;  /*(20px)*/
+	width: 120px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+	border: 3px solid #009CD3;
+	margin-left: 165px;
+}
+#contact .form .btn:hover{
+	background-color: #FFF;
+	color: #009CD3;
+	cursor: pointer;
+}
+#contact .form .required::after{
+	content: " * ";
+	color: #F00;
+}
+#contact .form .attention{
+	margin: 20px 0 0 165px;
+}
+
+/*レスポンシブデザイン*/
+@media screen and (max-width: 600px){
+	body{
+		font-size: 3.5vw;
+	}
+	h1{  
+		font-size: 7.2vw;
+	}
+	h2{
+		font-size: 6vw;
+	}
+	header{
+		width: auto;
+		margin: 0 5%;
+		height: auto;
+	}
+	.logo{
+		float: none;
+		margin-top: 60px;
+		text-align: center;
+	}
+	nav{
+		float: none;
+		margin-top: 40px;
+		text-align: center;
+	}
+	nav li{
+		float: none;
+		display: inline;
+		/*margin: 0 8px;*/
+	}
+	#wrap{
+		margin-top: 40px;
+		padding: 35px 0 0;
+	}
+	.content{
+		width: 100%;
+	}
+	.main{
+		float: none;
+		width: auto;
+		margin: 0 5%;  /*headerと同じように*/
+	}
+	h5 img{
+		max-width: 100%;
+	}
+	#portfolio{
+		background-image: url(../images/bg-portfolio-sp.jpg);
+	}
+	.sidebar{
+		width: auto;
+		float: none;
+		margin: 0;
+		padding: 30px 10% 10px;
+		background-color: #F7F6F4;
+	}
+}
+
+
+
+
+
+

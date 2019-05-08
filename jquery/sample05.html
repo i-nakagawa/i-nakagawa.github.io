@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Sample05</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$(".show").click(function(){
+				$(".photo1").show();
+			});
+			$(".hide").click(function(){
+				$(".photo1").hide();
+			});
+			$(".toggle").click(function(){
+				$(".photo1").toggle();
+			});
+			//
+			$(".fadein").click(function(){
+				$(".photo2").fadeIn(2000);
+			});
+			$(".fadeout").click(function(){
+				$(".photo2").fadeOut(1000);
+			});
+			$(".fadetoggle").click(function(){
+				$(".photo2").stop().fadeToggle(); //これで予約がリセットされる
+			});
+			//
+			$(".slidedown").click(function(){
+				$(".photo3").slideDown();
+			});
+			$(".slideup").click(function(){
+				$(".photo3").slideUp();
+			});
+			$(".slidetoggle").click(function(){
+				$(".photo3").slideToggle();  //下でインライン要素にクラス名がついてる時
+			});
+			$(".slidetoggle2").click(function(){
+				$(".photo4").slideToggle();  //下でブロック要素のpタグにクラス名がついてる時
+			});
+
+
+		});
+	</script>
+	<style>
+		p{
+			height: 160px;  /*これでtoggleしても線が動かなくなる*/
+		}
+		.photo1, .photo2, .photo3{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button class="show">show</button>
+	<button class="hide">hide</button>
+	<button class="toggle">toggle</button>
+	<p><img src="../img/ps05.jpg" class="photo1"></p>
+	<hr>
+	<button class="fadein">fadeIn</button>
+	<button class="fadeout">fadeOut</button>
+	<button class="fadetoggle">fadeToggle</button>
+	<p><img src="../img/ps06.jpg" class="photo2"></p>
+	<hr>
+	<button class="slidedown">slideDown</button>
+	<button class="slideup">slideUp</button>
+	<button class="slidetoggle">slideToggle</button>
+	<p><img src="../img/ps08.jpg" class="photo3"></p>  
+	<!-- ここだとインライン要素にクラス名がついてる。 -->
+	<hr>
+	<button class="slidetoggle2">slideToggle2</button>
+	<p class="photo4"><img src="../img/ps08.jpg"></p>
+	<!-- ここだと<p>のブロック要素にクラス名がついてるからスライドの仕方が変わる -->
+	<hr>
+</body>
+</html>
+
+
+

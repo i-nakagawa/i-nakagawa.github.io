@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Sample09</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			//変数の初期化 Initialize
+			var message;
+			//イベント
+			$(".btn1").click(function(){
+				message = $("#name").val();
+				$(".text1").html("Hello <strong>" + message + "</strong>! How are you?");
+			});
+			$(".btn2").click(function(){
+				message = $("#address").val();
+				$(".text2").html("お住まいの地域は<strong>" + message + "</strong>ですね。");
+			});
+			$(".btn3").click(function(){
+				message = $("input[name=radio1]:checked").val();
+				$(".text3").html("ご希望は<strong>" + message + "</strong>ですね。");
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="name">
+	<button class="btn1">Click!</button>
+	<p class="text1">Enter your name.</p>
+	<hr>
+	<select id="address">
+		<option value="都会">東京都</option>
+		<option value="神奈川県">神奈川県</option>
+		<option value="千葉県">千葉県</option>
+		<option value="埼玉県">埼玉県</option>
+		<option selected>選んでください</option>
+	</select>
+	<button class="btn2">Click!</button>
+	<p class="text2">お住まいの地域を選んでください。</p>
+	<hr>
+	<!-- ↓同じnameだから一個だけ選べれるようになってる。
+		又、checkedにしとくと前もってそこがチェックされた状態ででる。 -->
+	<label><input type="radio" name="radio1" value="国内旅行" checked>国内</label>
+	<label><input type="radio" name="radio1" value="海外旅行">海外</label>
+	<button class="btn3">Click!</button>
+	<p class="text3">お好みを選んでください。</p>
+</body>
+</html>

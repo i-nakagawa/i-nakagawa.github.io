@@ -1,0 +1,75 @@
+/*CSS Document*/
+
+h1{
+	color:teal;
+	border-width: 3px;
+	border-color: #5B53E8 #6799FF #A75BFF;
+	border-style: double;
+	font-weight: normal;
+	font-family: fantasy;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+ul, ol{
+	border: solid royalblue;
+	border-width: 2px 0px 2px;
+	border-radius: 5px;
+  padding: 8px 30px;
+  line-height: 25px;
+}
+
+ol{
+	background-color: #9589E1;
+}
+ul{
+	background-color: #d0adff;
+
+}
+li{color:white;}
+
+p{color:green;}
+
+h2{color:navy;}
+h3{color:#800080;}
+h4{color:#c71585;}
+h5{color:#ffb6c1;}
+
+/*table tag page*/
+caption {
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 0.4em;
+}
+
+table{
+	border-collapse: collapse;
+}
+td, th{
+	/*border-right: 1px solid #333;*/
+	/*border-bottom: 1px solid #333;*/
+	padding: 8px 20px;
+}
+
+th{
+	background-color: #ccc;
+	letter-spacing: 0.2em;
+}
+#table h3{
+	color: #333;
+}
+#table p{
+	color: #333;
+}
+
+a:link{
+	color: lightblue;
+	text-decoration: none;
+}
+a:visited{
+	color: royalblue;
+}
+a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}

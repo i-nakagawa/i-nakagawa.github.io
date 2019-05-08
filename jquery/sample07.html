@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Sample07</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$(".left").click(function(){
+				$("img").stop().animate({"left":"+=50px"},200) // 押すたびに右に100px動かせる
+				//stylesheetでtransitionつけた方が品質はいいけど複雑なことはできないらしい。
+			});
+			$(".right").click(function(){
+				$("img").stop().animate({"left":"-=50px"},200)
+			});
+			$(".up").click(function(){
+				$("img").stop().animate({"top":"-=50px"},200)
+			});
+			$(".down").click(function(){
+				$("img").stop().animate({"top":"+=50px"},200)
+			});
+
+		});
+	</script>
+	<style>
+		img{
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		} /*これで真ん中に来るはず*/
+	</style>
+</head>
+<body>
+	<button class="left">→</button>
+	<button class="right">←</button>
+	<button class="up">↑</button>
+	<button class="down">↓</button>
+	<img src="../img/ps05.jpg">
+
+</body>
+</html>

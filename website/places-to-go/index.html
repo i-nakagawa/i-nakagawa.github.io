@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Places to go｜Van Tour!</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One|Alegreya:500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body id="places">
+	<header class="global-header">
+		<div class="logo">  
+			<a href="../index2.html" class="animation"><img src="../img/logo2.png" width="80" alt="Van Tour"></a>
+		</div>
+	  <nav>
+	  	<ul>
+	  		<li><a href="../index2.html#about">ABOUT</a></li>
+	  		<li><a href="../places-to-go/index.html">PLACES TO GO</a></li>
+	  		<li><a href="../events/index.html">EVENTS</a></li>
+	  		<li><a href="../contact/index.html">CONTACT</a></li>
+	  	</ul>
+	  </nav>
+	</header>
+
+	<div id="wrap" >
+		<div class="content" >
+			<h1>Where to go?</h1>
+			<section id="sites" class="clearfix">
+				<!-- site01 -->
+				<div id="each_site">
+					<div class="photo">
+						<div class="line_hover">
+							<a href="#"><img src="../img/site01.jpg" alt="Gastown"></a>
+						</div>
+						<div class="title_hover">
+							<a href="#">Gastown</a>
+						</div>
+		      </div>
+		      <div class="text">Vancouver’s oldest neighbourhood, <span>Gastown</span>, has kept its historic charm and independent spirit since 1886. Take a picture at Maple Tree Square!</div>
+				</div>
+	      <!-- site02 -->
+				<div id="each_site">
+		      <div class="photo">
+						<div class="line_hover">
+							<a href="#"><img src="../img/site06.jpg" alt="Stanley park"></a>
+						</div>
+						<div class="title_hover">
+							<a href="#">Stanley Park</a>
+						</div>
+		      </div>
+		      <div class="text">A magnificent green oasis in the midst of the urban landscape, <span>Stanley Park</span>.<br>Explore this 1000-acre public grounds or enjoy the scenic view by bicycle!</div>
+	    	</div>
+	      <!-- site03 -->
+				<div id="each_site">
+					<div class="photo">
+						<div class="line_hover">
+							<a href="#"><img src="../img/site08.jpg" alt="North Vancouver"></a>
+						</div>
+						<div class="title_hover">
+							<a href="#">Capilano River</a>
+						</div>
+		      </div>
+		      <div class="text"><span>The Capilano River Suspension Bridge</span> offers Canyon Lights, Guided Tours and Adventures through the Living Forest.<br>Are you brave enough to cross?</div>
+		    </div>
+	      <!-- site04 -->
+				<div id="each_site">
+					<div class="photo">
+						<div class="line_hover">
+							<a href="#"><img src="../img/site23.jpg" alt="Kitsilano"></a>
+						</div>
+						<div class="title_hover">
+							<a href="#">Kitsilano</a>
+						</div>
+		      </div>
+		      <div class="text">A lively, beautiful, and eco-friendly beachside community forms the heart of <span>Kitsilano</span>. Grab a drink and chill out with the locals at Kits beach.</div>
+		    </div>
+	      <!-- site05 -->
+				<div id="each_site">
+					<div class="photo">
+						<div class="line_hover">
+							<a href="#"><img src="../img/site03.jpg" alt="Granville Island"></a>
+						</div>
+						<div class="title_hover">
+							<a href="#"> Granville Island</a>
+						</div>
+		      </div>
+		      <div class="text">Vancouver’s premier artistic & cultural hub, <span>Granville Island</span>. Explore the marketplace, discover unique paintings and grab yourself a souvenir!</div>
+		    </div>
+	      <!-- site06 -->
+				<div id="each_site">
+					<div class="photo">
+						<div class="line_hover">
+							<a href="#"><img src="../img/site15.jpg" alt="Deep Cove"></a>
+						</div>
+						<div class="title_hover">
+							<a href="#">Deep Cove</a>
+						</div>
+		     	</div>
+		      <div class="text"><span>Deep Cove</span> is one of many scenic spots that North Vancouver has to offer.<br>Grab your hiking boots and check out the stunning view at Quarry Rock!</div>
+		    </div>
+
+			</section>
+		</div> <!-- content end -->
+	</div> <!-- wrap end -->	
+
+	<footer>&copy; 2019 Vancouver Tour</footer>
+
+	<script>
+		// h1 animation
+		setTimeout(function(){
+			$("h1").css("opacity", 1);
+			$("h1").addClass("active");
+		},200);
+		// title_hover
+		$(".photo").hover(function(){
+			$(this).children(".title_hover").css("opacity",1);
+		},
+		function(){
+			$(".title_hover").css("opacity",0);
+		});
+	</script>
+
+</body>
+</html>

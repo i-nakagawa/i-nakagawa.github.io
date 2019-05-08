@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>3D Titled Scroll</title>
+	<link rel="stylesheet" href="tiltedpage/demo/tiltedpage-scroll.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="tiltedpage/jquery.tiltedpage-scroll.min.js"></script>
+
+<style>
+	body{
+		margin: 0;
+		font-family: Trebuchet MS, Tahoma, Geneva, sans-serif;
+	}
+	h1{
+		width: 220px;
+		text-align: center;
+		padding-bottom: 5px;
+		border-bottom: 2px dotted #333;
+		margin-left: 50px;
+	}
+	h2{
+		margin-left: 100px;
+	}
+	.main{
+		padding: 0 50px;
+		width: 960px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<h1>jQuery Plugin</h1>
+	<h2>★ 3D Titled Scroll</h2>
+	<div class="main">
+	  <section class="page1">
+	  	<img src="images/img02.jpg" width="1000" height="500">
+	  </section>
+	  <section class="page2">
+	  	<img src="images/img03.jpg" width="1000" height="500">
+	  </section>
+	  <section class="last-page">
+	  	<img src="images/img04.jpg" width="1000" height="500">
+	  </section>
+	</div>
+
+	<script>
+		$(".main").tiltedpage_scroll({
+	    angle: 20,
+	    opacity: true,
+	    scale: true,
+	    outAnimation: true
+  	});
+	</script>
+
+</body>
+</html>

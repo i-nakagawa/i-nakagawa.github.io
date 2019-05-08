@@ -1,0 +1,329 @@
+body{
+	margin: 0;
+	font-family: Yu Gothic Medium, YuGothic, Trebuchet MS, Geneva, Tahoma, sans-serif;
+  background-color: #CCC;
+  color: #333;
+  font-size: 0.93em;
+  line-height: 2;
+}
+
+/*Reset CSS*/
+p, h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+}
+img{
+	vertical-align: bottom;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*Link*/
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*TAG*/
+header{
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+}
+
+.logo{
+	float: left;
+	margin-top: 50px;
+}
+.logo img{
+	width: 200px;
+}
+
+nav{
+	float: right;
+	margin-top: 50px;
+}
+nav li{
+	float: left;
+	/*margin: 0 20px;*/
+	font-size: 1.33em;
+	font-family: 'Arvo', serif;
+	padding: 0 20px;
+  border-right: 1px solid #FFF;
+}
+nav li:last-child{
+  padding-right: 0;
+  border: none;
+}
+
+nav li a{
+	color: #FFF;
+	transition-duration: 0.5s;
+	transform: scaleZ(0);
+}
+nav li a:hover{
+	border-bottom: 2px solid #FFF;
+	padding-bottom: 3px;
+	/*width: 100%;*/
+	transform: scaleZ(1);
+}
+
+#wrap{
+	clear: both;
+	background-color: #FFF;  
+	margin-top: 220px;
+	padding: 35px 0;
+}
+.content{
+	width: 960px;
+	margin: 0 auto;
+}
+
+footer{
+	width: 100%;
+	text-align: center;
+	font-size: 0.8em;
+	color: #FFF;
+	background-color: #111;
+	padding: 20px 0;
+	margin: 0 auto ;
+	line-height: 1px;
+}
+
+#index h1{
+	font-family: 'Courgette','Bitter', sans-serif;
+	font-size: 50px;
+	line-height: 1;
+	color: #FFF;
+	margin-left: 100px;
+	border: none;
+}
+#index .content{
+	margin-top: 80px;
+}
+#index p{
+	font-size: 1.07em;  /*(16px)*/
+	color: #FFF;
+	margin-left: 140px;
+	font-family: 'Arvo', serif;
+}
+.btn a{
+	background-color: #021f44;
+	color: #FFF;
+	font-size: 1.33em;  /*(20px)*/
+	font-family: 'Bitter', serif;
+	width: 185px;
+	display: block;
+	line-height: 50px;
+	margin-top: 180px;
+	margin-bottom: 200px;
+	border-radius: 5px;
+	border: 3px solid #FFF;
+	/*transition-duration: 0.5s;*/
+}
+.btn a:hover{
+	text-decoration: none;
+	background-color: #FFF;
+	color: #021f44;
+	border: 3px solid #021f44;
+}
+
+#index{
+	background-image: url(../img/bg_index.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#index #wrap{
+	background-color: transparent;
+	margin-top: 0;
+	padding: 0;
+}
+
+/*About*/
+#about{
+	background-image: url(../img/bg-about.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+.main-center{
+	width: 940px;
+	margin: 0 auto;
+}
+h1{
+	font-family: 'Bitter', serif;
+	font-size: 2.4em;  /*(36px)*/
+	border-bottom: 1px solid #CCC;
+}
+h2{
+	font-family: 'Bitter', serif;
+	font-size: 1.6em;  /*(24px)*/
+}
+
+
+.icon::before{  /*「:before」でもOK*/
+	content: "";
+  padding-right: 10px;
+  border-left: 7px solid #9CB4A4;
+}
+
+#about .profile-txt{
+	width: 540px;
+	float: left;
+}
+#about .profile-txt span{
+	font-weight: bold;
+}
+#about .profile-image{
+	float: right;
+}
+.clearfix::after{
+	content: "";
+  display: block;
+  clear: both;
+}
+section{
+	margin-bottom: 35px; 
+}
+
+#about .career th{
+	width: 240px;
+	background-color: #F0F0F0;
+	padding: 12px 0;
+	border: 1px solid #CCC;
+}
+#about .career td{
+	width: 660px;
+	padding: 12px 0 12px 40px;
+	border: 1px solid #CCC;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+/*Portfolio*/
+#portfolio{
+	background-image: url(../img/bg-portfolio.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+.main{
+	width: 700px;
+	margin: 0 10px;
+	float: left;
+}
+.sidebar{
+	width: 200px;
+	margin: 0 10px 0 30px;
+	float: right;
+	font-family: 'Bitter', serif;
+}
+.sidebar h2{
+	margin-bottom: 10px;
+}
+.sidebar ul{
+	/*list-style: disc;*/
+	/*margin-left: 20px;*/
+	font-size: 1.07em;
+}
+.sidebar ul a{
+	color: #333;
+}
+.sidebar li {
+    padding-left: 30px;
+    background-image: url(../img/maple.png);
+    background-repeat: no-repeat;
+    /*background-position: left 7px;*/
+}
+
+/*教科書は↓だけ*/
+a img:hover{
+	opacity: 0.8;
+}
+
+/*HTML&CSS3*/
+#html5css3{
+	background-image: url(../img/bg-htmlcss.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+#html5css3 .html5css3-list li{
+	float: left;
+	margin: 0 20px 15px 0;
+}
+#html5css3 .html5css3-list li:nth-child(3n){
+	margin-right: 0;
+}
+#html5css3 .main img{
+	width: 220px;
+	height: 160px;
+}
+/*DreamWeaver*/
+#dw{
+	background-image: url(../img/bg-dw.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+#dw .dw-list li{
+	float: left;
+	margin: 0 20px 15px 0;
+}
+#dw .dw-list li:nth-child(3n){
+	margin-right: 0;
+}
+/*Illustrator&Photoshop*/
+#aips{
+	background-image: url(../img/bg-aips.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+#aips .aips-list li{
+	float: left;
+	margin: 0 20px 15px 0;
+}
+#aips .aips-list li:nth-child(3n){
+	margin-right: 0;
+}
+
+/*JavaScript*/
+#js{
+	background-image: url(../img/bg-js.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+#js .js-list li{
+	float: left;
+	margin: 0 20px 15px 0;
+}
+#js .js-list li:nth-child(3n){
+	margin-right: 0;
+}
+#js .main img{
+	width: 220px;
+	height: 160px;
+}
+
+
+
+
+

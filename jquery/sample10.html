@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Sample10</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			//初期設定
+			// ↓「var selected, class_name;」と省略もできる、けどあまりやらない。
+			var selected;
+			var class_name;
+			// ↓ 料金計算をする変数なので、最初に０(又は初期値)を入れていないと計算できない
+			var total_price = 0; 
+		  $("td").html("空");
+
+		  //イベント
+	  	$("td").click(function(){
+	  		if ($(this).html() == "空") {
+		  		selected = $("input[name=radio1]:checked").val();
+		  		class_name = $("input[name=radio1]:checked").data("class");
+		  		price_name = $("input[name=radio1]:checked").data("price");
+		  		total_price = total_price + price_name;
+		  		
+				  $(this).html( selected ).addClass( class_name ).data("yen", price_name);
+				  $("span").html( total_price );
+	  		} else {
+	  			$(this).removeClass().html("空");
+	  			total_price = total_price - $(this).data("yen");
+	  			$("span").html( total_price );
+	  		}
+		  });
+
+		  //リセット
+		  $("button").click(function(){
+			  $("td").removeClass().html("空");
+			  total_price = 0;
+			  $("span").html( total_price );
+      });
+  	});
+
+	</script>
+	<style>
+		td{
+	  padding: 10px;
+	  }
+	  td:hover{
+		  background-color:#CCC;
+	  }
+	  .adult{
+	  background-color: red!important;
+	  color:white;
+  	}
+  	.child{
+	  background-color: blue!important;
+	  color:white;
+  	}
+	</style>
+</head>
+<body>
+	<button>Reset</button>
+  <!--「data-○○="__"」で汎用属性作れる　↓ -->
+	<label><input type="radio" name="radio1" value="大" data-class="adult" data-price="1000" checked>おとな</label>
+	<label><input type="radio" name="radio1" value="小" data-class="child" data-price="500">こども</label>
+	合計<span>0</span>円
+
+	<table width="200" border="1">
+			<script type="text/javascript">
+				for (var i = 1; i <=10; i++) {
+					document.write("<tr>");
+						for (var ii = 1; ii <=10; ii++) {
+						document.write("<td>","&nbsp;","</td>");}
+					document.write("</tr>");
+				}
+			</script>
+	</table>
+
+<!-- 	<script>
+		var total_price = 0; 
+		$("td").html("空");
+
+		$("td").click(function(){
+	  		if ($(this).html() == "空") {
+		  		selected = $("input[name=radio1]:checked").val();
+		  		class_name = $("input[name=radio1]:checked").data("class");
+		  		total_price = total_price + $("input[name=radio1]:checked").data("price");
+		  		// 要は右の計算で
+		  		// 初期値の０(total_price) + 1000(例えばadult)＝1000円
+		  		// になって、それが左のtotal_priceに代入され、それを繰り返すから足される。
+
+				  $(this).html( selected ).addClass( class_name );
+				  $("span").html( total_price );
+	  		} else {
+	  			if ($(this).html() == "大") {
+	  				total_price = total_price - 1000;
+	  			} else {
+	  				total_price = total_price - 500;
+	  			}
+	  			$(this).removeClass().html("空");
+	  			$("span").html( total_price );
+	  		}
+	  });
+	  //リセット
+	  $("button").click(function(){
+		  $("td").removeClass().html("空");
+		  total_price = 0;
+		  $("span").html( total_price );
+    });
+	</script>
+ -->
+</body>
+</html>
+

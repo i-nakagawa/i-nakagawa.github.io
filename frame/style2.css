@@ -1,0 +1,194 @@
+body{
+	margin: 0;
+	font: 0.75em/1.3em "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka,"ＭＳ Ｐゴシック", "MS P Gothic",
+		sans-serif;
+	color: #333;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	vertical-align: bottom;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/*End of Reset CSS*/
+
+#wrap{
+	width: 960px;
+	padding: 0 5px;
+	margin: 0 auto;
+}
+header{
+	padding: 58px 0 40px;
+}
+h1{
+	width: 303px;
+	margin: 0;
+	float: left;
+}
+#search{
+	width: 125px;
+	float: right;
+	background: url(images/search.gif) no-repeat right center;
+	padding: 2px 20px 2px 2px;
+	border: 1px solid #999;
+}
+#search input{
+	width: 120px;
+	border: none;
+	outline: none;
+}
+nav{
+	width: 160px;
+	float: left;
+}
+nav li{
+	margin-bottom: 22px;
+	height: 12px;
+}
+main{
+	width: 790px;
+	float: left;
+	padding-bottom: 47px;
+	border-bottom: 1px solid #999;
+	margin-bottom: 12px;
+}
+#main_visual{
+	height: 420px;
+	margin-bottom: 45px;
+}
+#recom{
+	width: 470px;
+	float: left;
+}
+h2{
+	height: 18px;
+	border-bottom: 1px solid #999;
+	margin-bottom: 20px;
+}
+.item{
+	width: 100px;
+	margin-right: 20px;
+	float: left;
+}
+.item:last-child{
+	margin-right: 0;
+}
+.photo{
+	height: 98px;
+}
+#new{
+	width: 270px;
+	float: right;
+}
+#new p{
+	border-bottom: 1px dotted #999;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+#new p:last-child{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+#new a{
+	color: #09C;
+}
+#new a:hover{
+	background-color: #09C;
+	color: #FFF;
+}
+footer{
+	clear: left;
+	font-size: 0.8;
+	text-align: right;
+	padding-bottom: 12px;
+}
+#hamburger{
+	display: none; /*非表示にしてる*/
+}
+
+/*レスポンシブデザイン*/
+@media screen and (max-width: 600px){
+	body{
+		font-size: 1em;
+		line-height: 1.7em;
+	}
+	#wrap{
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	h1{
+		width: auto;
+		text-align: center;
+		float: none;
+		margin-bottom: 40px;
+	}
+	#search{
+		float: none;
+		margin: 0 auto;
+	}
+	#search input{
+		width: 100px;
+	}
+	nav{
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: -120px;
+		background-color: #FFF;
+		padding: 10px 0 10px 20px;
+		width: 100px;
+		transition-duration: 0.5s;
+	}
+	main{
+		width: auto;
+		float: none;
+		border: none;
+		padding: 0;
+	}
+	#main_visual{
+		height: 53vw;
+	}
+	#recom, #new{
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+	}
+	h2{
+		border: none;
+		text-align: center;
+		height: auto;
+	}
+	.item{
+		float: none;
+		width: auto;
+		margin: 0 0 30px;
+		text-align: center;
+	}
+	.photo{
+		height: auto;
+		margin: 0 0 10px;
+	}
+	footer{
+		font-size: 0.8em;
+		text-align: center;
+	}
+	#hamburger{
+		display: block;
+		position: fixed;
+		z-index: 1;
+		top: 5px;
+		left: 5px;
+		width: 50px;
+		height: 50px;
+	}
+}
+

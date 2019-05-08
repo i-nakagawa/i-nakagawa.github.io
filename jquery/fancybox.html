@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>fancyBox2</title>  <!-- type属性はHTML5になってからいらなくなったらしい -->
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	<script src="fancybox/helpers/jquery.fancybox-buttons.js"></script>
+	<script>
+		$(function(){
+			$("a").fancybox({
+				helpers : {
+					buttons : {}
+				},
+				closeBtn: false  //右上のX消してる
+			});
+		});
+	</script>
+	<style>
+	body{
+		font-family: Tahoma, Trebuchet MS, Geneva, sans-serif;
+	}
+	</style>
+
+</head>
+<body>
+	<a href="images/img02.jpg">Image02</a>
+	<a href="images/img05.jpg">Image05</a>
+	<a href="images/img04.jpg">Image04</a>
+	<a href="images/img10.jpg">Image10</a>
+	<hr>
+	<a href="images/img02.jpg" rel="group1" title="Science World"><img src="images/img02.jpg" width="200"></a>
+	<a href="images/img05.jpg" rel="group1" title="Streets in Autumn"><img src="images/img05.jpg" width="200"></a>
+	<a href="images/img04.jpg" rel="group1" title="Victoria"><img src="images/img04.jpg" width="200"></a>
+	<a href="images/img10.jpg" rel="group1" title="Vancouver Puclic Library"><img src="images/img10.jpg" width="200"></a>
+	<hr>
+	<a href="https://www.youtube.com/embed/52fD-TK0Jz0" data-fancybox-type="iframe">YouTube1</a>
+	<a href="https://www.youtube.com/embed/w7EyUJSjFko?autoplay=1" data-fancybox-type="iframe">YouTube2(AutoPlay)</a>
+</body>
+</html>
+
+

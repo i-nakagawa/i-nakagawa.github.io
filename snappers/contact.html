@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Contact｜風景写真家「SNAPPERS」</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Bitter" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body id="contact">
+
+	<header>
+		<div class="logo">  
+		  <a href="index.html"><img src="images/logo.png" alt="SNAPPERS"></a>
+	  </div>
+	  <nav>
+	  	<ul class="global-nav">
+	  		<li><a href="portfolio.html">Portfolio</a></li>
+	  		<li><a href="about.html">About</a></li>
+	  		<li><a href="contact.html">Contact</a></li>
+	  	</ul>
+	  </nav>
+	</header>
+
+	<div id="wrap">
+		<div class="content">
+			<div class="main-center">
+				<h1>Contact</h1>
+				<p>SNAPPERSへのアクセス方法、お問い合わせ、撮影のご依頼フォームのページです。お気軽にお問い合わせ下さい。</p>
+				<section class="access clearfix">
+					<h2 class="icon">Access</h2>
+					<table>
+						<tr>
+							<th>所在地住所</th>
+							<td>〒123-4567<br>静岡県伊東市伊豆高原○△☆-12</td>
+						</tr>
+						<tr>
+							<th>電話番号</th>
+							<td>012-3456-7890</td>
+						</tr>
+						<tr>
+							<th>電車でのアクセス</th>
+							<td>伊豆急行「伊豆高原」駅より徒歩15分</td>
+						</tr>
+						<tr>
+							<th>お車でのアクセス</th>
+							<td>伊豆山I.Cより国道135号線経由で50分</td>
+						</tr>
+					</table>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.1210268676236!2d139.10502110050498!3d34.87830708029314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae7aa327d6680a4!2sIzukogen+Station!5e0!3m2!1sen!2sjp!4v1548725854024" width="460" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+				<section>
+					<h2 class="icon">Contact form</h2>
+					<div class="form">
+
+						<form>
+							<dl>
+								<dt><span class="required">お名前</span></dt>  
+								<dd><input type="text" name="name" class="name" required></dd> 
+								<dt><span class="required">メールアドレス</span></dt>
+								<dd><input type="email" name="email" class="email" required></dd>
+								<dt>お電話番号</dt>
+								<dd><input type="tel" name="tel" class="tel"></dd>
+								<dt>お問い合わせ種別</dt>
+								<dd>
+									<select name="type" class="type"> 
+										<option value="Shooting request">撮影のご依頼</option>  
+										<option value="lecture media request">講演・各種メディア出演のご依頼</option>
+										<option value="その他お問い合わせ">その他お問い合わせ</option>
+									</select>
+								</dd>
+								<dt>ご希望のご連絡方法</dt>
+								<dd>
+									<label><input type="radio" name="contact" value="Eメール">Eメール</label>
+									<label><input type="radio" name="contact" value="お電話">お電話</label>
+								</dd>
+								<dt>メッセージ</dt>
+								<dd><textarea name="message" class="message" placeholder="ご記入ください。"></textarea></dd>
+							</dl>
+							<button class="back" onclick="javascript:window.history.back(-1);return false;">Back</button>
+							<button type="submit" class="btn">送信</button>
+						</form>
+						<div class="attention">
+							<p>※「<span class="required"></span>」の付いている項目は必須項目です。<br>
+							   ※メッセージ送信後、48時間以内に担当者よりご連絡いたします。</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>  <!-- content end -->
+	</div>  <!-- wrap end -->
+
+	<footer>
+	<small>&copy; 2017-2019 Moss Studio.</small>
+  </footer>
+
+</body>
+</html>

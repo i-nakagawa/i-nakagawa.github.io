@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Vegas2</title>
+	<link rel="stylesheet" href="vegas/vegas.min.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="vegas/vegas.min.js"></script>
+	<script>
+		$(function(){
+			$("body").vegas({
+				slides : [
+					{ src : "images/img01.jpg"},
+					{ src : "images/img05.jpg"},
+					{ src : "images/img06.jpg"},
+					{ src : "images/img04.jpg"}
+				],
+				timer: false,
+				transitionDuration: 700,
+				delay: 5000,
+				transition: 'blur',
+				overlay: 'vegas/overlays/07.png',
+				// animation: 'kenburnsUpRight'
+				animation: 'random'
+			});
+			//vagas2
+			$("#slideshow1").vegas({
+				slides: [
+					{ src : "images/img07.jpg"},
+					{ src : "images/img08.jpg"},
+					{ src : "images/img09.jpg"},
+					{ src : "images/img10.jpg"}
+				],
+				transition: 'swirlLeft',
+				delay: 3000,
+				// autoplay: false,
+			});
+			//button
+			$(".prev").click(function(){
+				$("#slideshow1").vegas('previous');  
+			});
+			$(".next").click(function(){
+				$("#slideshow1").vegas('next');
+			});
+		});
+	</script>
+	<style>
+		#slideshow1{
+			width: 500px;
+			height: 400px;
+			margin: 20px auto;
+			border-radius: 10px;
+		}
+		/*.vegas-timer-progress{
+			background-color: blue;
+		}*/
+		.vegas-timer{
+			height: 10px;
+			opacity: 0.5;
+		}
+		button{
+			width: 70px;
+		}
+		p{
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="slideshow1"></div>
+	<p>
+	<button class="prev">PREV</button>
+	<button class="next">NEXT</button>
+	</p>
+</body>
+</html>
