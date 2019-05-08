@@ -68,6 +68,7 @@ nav li a{
 }
 nav li a:hover{
 	border-bottom: 2px solid #FFF;
+	text-decoration: none;
 	padding-bottom: 3px;
 	/*width: 100%;*/
 	transform: scaleZ(1);
@@ -98,7 +99,7 @@ footer{
 #index h1{
 	font-family: 'Courgette','Bitter', sans-serif;
 	font-size: 50px;
-	line-height: 1;
+	line-height: 1;  /*行間が広すぎる為、狭めてる*/
 	color: #FFF;
 	margin-left: 100px;
 	border: none;
@@ -119,6 +120,7 @@ footer{
 	font-family: 'Bitter', serif;
 	width: 185px;
 	display: block;
+	text-align: center;
 	line-height: 50px;
 	margin-top: 180px;
 	margin-bottom: 200px;
@@ -259,7 +261,7 @@ a img:hover{
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
-	background-size: 100% auto;
+	background-size: 100% auto;  /*これでフルスクリーンカバーされる*/
 }
 #html5css3 .html5css3-list li{
 	float: left;
@@ -302,6 +304,10 @@ a img:hover{
 #aips .aips-list li:nth-child(3n){
 	margin-right: 0;
 }
+/*h3{
+	font-family: 'Bitter', serif;
+	line-height: 0;
+}*/
 
 /*JavaScript*/
 #js{
