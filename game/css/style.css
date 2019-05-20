@@ -152,10 +152,21 @@ footer{
 		width: 300px;
   	margin: 0 auto;
   	padding: 30px 0px;
+  	font-size: 1.5em;
+  	line-height: 0.8em;
 	}
-	h3{
-		padding-bottom: 60px;
+	h2 img{
+		width: 20px;
+		padding-top: 10px;
+		padding-left: 5px;
 	}
+	#record{
+		font-size:1em;
+	}
+	#timer{
+		font-size:1em;
+	}
+
 	#game{
 		width: 300px;
 	}
@@ -163,11 +174,12 @@ footer{
 		width: 300px;
 		height: 300px;
 	}
-	#startScene p {
-    margin: 150px 0 10px;
-  }
   button{
-  	font-size: 1.5em;
+  	height: 2em;
+  	padding: 0px 20px;
+  }
+  #startScene p {
+    margin: 100px 0 10px;
   }
 	#numbers div{
 		width: 74px;
