@@ -107,10 +107,10 @@ button{
 	color: #002032;
 	font-size: 1.2em;
 	height: 2.5em;
-	letter-spacing: 0.2em;
+	/*letter-spacing: 0.2em;*/
 	font-family: 'Palatino','Georgia',sans-serif;
 	font-weight: bold;
-	padding: 12px 30px 8px;
+	padding: 12px 25px 8px;
 	cursor: pointer;
 	border-radius: 5px;
 	border: 2px solid #002032;
