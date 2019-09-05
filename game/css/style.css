@@ -175,7 +175,7 @@ footer{
 		height: 300px;
 	}
   button{
-  	height: 2em;
+  	font-size: 1em;
   	padding: 0px 20px;
   }
   #startScene p {
